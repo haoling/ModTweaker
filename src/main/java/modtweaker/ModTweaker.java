@@ -9,6 +9,7 @@ import modtweaker.mods.botania.Botania;
 import modtweaker.mods.chisel.Chisel;
 import modtweaker.mods.extrautils.ExtraUtilities;
 import modtweaker.mods.forestry.Forestry;
+import modtweaker.mods.mekanism.Mekanism;
 import modtweaker.mods.randomthings.RandomThings;
 import modtweaker.mods.refinedstorage.RefinedStorage;
 import modtweaker.mods.tconstruct.TConstruct;
@@ -54,7 +55,8 @@ public class ModTweaker {
         TweakerPlugin.register("embers", Embers.class);
 	
 		TweakerPlugin.register("extrautils2", ExtraUtilities.class);
-		
+        TweakerPlugin.register("Mekanism", Mekanism.class);
+
         if(FMLCommonHandler.instance().getSide() == Side.CLIENT) {
             MinecraftForge.EVENT_BUS.register(new ClientEvents());
         }
